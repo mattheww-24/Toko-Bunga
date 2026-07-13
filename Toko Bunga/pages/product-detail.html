@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Product Detail | Bloomify</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet"
+          href="../css/style.css?v=20260712">
+
+    <link rel="stylesheet"
+          href="../css/home.css?v=20260712">
+
+    <link rel="stylesheet"
+          href="../css/product.css?v=20260712">
+
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="container">
+
+            <a href="../index.html" class="logo">
+                Bloomify
+            </a>
+
+            <nav>
+
+                <ul class="nav-menu">
+
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+
+                    <li><a href="../index.html#flowers" class="nav-link active">Flowers</a></li>
+
+                    <li><a href="../index.html#about" class="nav-link">About</a></li>
+
+                    <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+            <div class="nav-icons">
+
+                <a href="cart.html" class="cart-icon-wrap" aria-label="Cart">
+
+                    <i data-lucide="shopping-cart"></i>
+
+                    <span id="cartBadge" class="cart-badge">0</span>
+
+                </a>
+
+                <a href="profile.html" aria-label="Profile">
+
+                    <i data-lucide="user-round"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="product-detail">
+
+        <div class="container">
+
+            <a href="../index.html#flowers" class="back-link">
+                ← Back to Flowers
+            </a>
+
+            <div class="product-grid">
+
+                <!-- LEFT -->
+
+                <div class="product-gallery">
+
+                    <img id="productImage" src="" alt="">
+
+                </div>
+
+                <!-- RIGHT -->
+
+                <div class="product-info">
+
+                    <h1 id="productTitle"></h1>
+
+                    <p class="rating" id="productRating"></p>
+
+                    <h2 class="price" id="productPrice"></h2>
+
+                    <p class="description" id="productDescription"></p>
+
+                    <div class="quantity-box">
+
+                        <button id="minus">-</button>
+
+                        <span id="quantity">1</span>
+
+                        <button id="plus">+</button>
+
+                    </div>
+
+                    <div class="product-action">
+
+                        <button class="btn btn-primary" id="addCart">
+                            Add To Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                © 2026 Bloomify. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <div class="toast" id="toast">
+
+        <div class="toast-icon">
+            <i data-lucide="check-circle"></i>
+        </div>
+
+        <div class="toast-content">
+
+            <h4 id="toastTitle">Success</h4>
+
+            <p id="toastMessage">Product Added</p>
+
+        </div>
+
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <script src="../js/products-data.js?v=20260712"></script>
+
+    <script src="../js/cart-store.js?v=20260712"></script>
+
+    <script src="../js/main.js?v=20260712"></script>
+
+    <script src="../js/product.js?v=20260712"></script>
+
+</body>
+
+</html>

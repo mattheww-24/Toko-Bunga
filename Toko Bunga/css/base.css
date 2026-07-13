@@ -1,0 +1,64 @@
+/* ==========================================
+   BASE STYLES
+   TR_TokoBunga
+========================================== */
+
+/* Typography */
+
+body{
+    font-family: var(--font-body);
+    color: var(--text-primary);
+    background: var(--background);
+    line-height: 1.6;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--font-heading);
+    color: var(--text-primary);
+    font-weight:700;
+}
+
+p{
+    color: var(--text-secondary);
+    font-size:15px;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+img{
+    display:block;
+    max-width:100%;
+}
+
+button{
+    font-family:inherit;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f8f3f5;
+}
+
+::-webkit-scrollbar-thumb{
+    background:var(--primary);
+    border-radius:50px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:var(--primary-hover);
+}
+
+/* Selection */
+
+::selection{
+    background:var(--primary);
+    color:#fff;
+}

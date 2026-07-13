@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart | Bloomify</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css?v=20260712">
+    <link rel="stylesheet" href="../css/home.css?v=20260712">
+    <link rel="stylesheet" href="../css/cart.css?v=20260712">
+
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="container">
+
+            <a href="../index.html" class="logo">
+                Bloomify
+            </a>
+
+            <nav>
+
+                <ul class="nav-menu">
+
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+
+                    <li><a href="../index.html#flowers" class="nav-link">Flowers</a></li>
+
+                </ul>
+
+            </nav>
+
+            <div class="nav-icons">
+
+                <a href="profile.html" aria-label="Profile">
+                    <i data-lucide="user-round"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="cart">
+
+        <div class="container">
+
+            <h1>Shopping Cart</h1>
+
+            <div id="cartList"></div>
+
+            <div class="empty-cart" id="cartEmpty" style="display:none;">
+
+                <i data-lucide="shopping-cart"></i>
+
+                <h2>Your cart is empty</h2>
+
+                <p>Looks like you haven't added any flowers yet.</p>
+
+                <a href="../index.html#flowers" class="btn btn-primary">
+                    Continue Shopping
+                </a>
+
+            </div>
+
+            <div class="cart-summary" id="cartSummary">
+
+                <h2>Order Summary</h2>
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <strong id="subtotal">Rp0</strong>
+                </div>
+
+                <div class="summary-row">
+                    <span>Total</span>
+                    <strong id="totalPrice">Rp0</strong>
+                </div>
+
+                <a href="checkout.html" class="btn btn-primary">
+                    Checkout
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>© 2026 Bloomify. All rights reserved.</p>
+
+        </div>
+
+    </footer>
+
+    <div class="toast" id="toast">
+
+        <div class="toast-icon">
+            <i data-lucide="check-circle"></i>
+        </div>
+
+        <div class="toast-content">
+            <h4 id="toastTitle">Success</h4>
+            <p id="toastMessage">Done</p>
+        </div>
+
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <script src="../js/products-data.js?v=20260712"></script>
+
+    <script src="../js/cart-store.js?v=20260712"></script>
+
+    <script src="../js/main.js?v=20260712"></script>
+
+    <script src="../js/cart.js?v=20260712"></script>
+
+</body>
+
+</html>
