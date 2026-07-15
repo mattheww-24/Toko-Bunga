@@ -1,0 +1,65 @@
+/* ==========================================
+   PROFILE
+========================================== */
+
+.profile{
+
+    padding:90px 0;
+
+}
+
+.profile-card{
+
+    width:420px;
+
+    margin:auto;
+
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:22px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.profile-card img{
+
+    width:140px;
+
+    height:140px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+}
+
+.profile-card h2{
+
+    margin-bottom:8px;
+
+}
+
+.profile-card p{
+
+    margin-bottom:35px;
+
+}
+
+.profile-menu{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}

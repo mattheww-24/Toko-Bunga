@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Profile | Bloomify</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet"
+          href="../css/style.css?v=20260712">
+
+    <link rel="stylesheet"
+          href="../css/profile.css?v=20260712">
+
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="container">
+
+            <a href="../index.html" class="logo">
+                Bloomify
+            </a>
+
+        </div>
+
+    </header>
+
+    <section class="profile">
+
+        <div class="container">
+
+            <div class="profile-card">
+
+                <img src="../assets/images/profile/avatar.jpg" alt="Profile">
+
+                <h2>Mateo</h2>
+
+                <p>mateo@email.com</p>
+
+                <div class="profile-menu">
+
+                    <a href="../index.html" class="btn btn-outline">
+                        Back to Home
+                    </a>
+
+                    <button id="logoutBtn" class="btn btn-primary">
+                        Logout
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="toast" id="toast">
+
+        <div class="toast-icon">
+            <i data-lucide="check-circle"></i>
+        </div>
+
+        <div class="toast-content">
+            <h4 id="toastTitle">Success</h4>
+            <p id="toastMessage">Logout Success</p>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>© 2026 Bloomify. All rights reserved.</p>
+
+        </div>
+
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <script src="../js/main.js?v=20260712"></script>
+
+    <script src="../js/profile.js?v=20260712"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+/* ==========================================
+   CHECKOUT
+========================================== */
+
+.navbar .container{
+
+    height:80px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+.checkout{
+
+    padding:60px 0 90px;
+
+}
+
+.checkout-grid{
+
+    display:grid;
+
+    grid-template-columns:1.4fr 1fr;
+
+    gap:40px;
+
+    align-items:start;
+
+}
+
+.checkout form{
+
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+}
+
+.checkout form h1{
+
+    margin-bottom:30px;
+
+}
+
+.input-group{
+
+    margin-bottom:22px;
+
+}
+
+.input-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:500;
+
+}
+
+.input{
+
+    width:100%;
+
+    padding:14px 18px;
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+    font-size:15px;
+
+    font-family:inherit;
+
+}
+
+textarea{
+
+    resize:none;
+
+}
+
+.checkout .btn{
+
+    width:100%;
+
+    margin-top:10px;
+
+}
+
+/* ==========================================
+   ORDER SUMMARY
+========================================== */
+
+.checkout-summary{
+
+    background:#fff;
+
+    padding:34px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+    position:sticky;
+
+    top:30px;
+
+}
+
+.checkout-summary h2{
+
+    margin-bottom:20px;
+
+    font-size:22px;
+
+}
+
+.checkout-summary-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:12px 0;
+
+    border-bottom:1px solid var(--border);
+
+    color:var(--text-secondary);
+
+    font-size:15px;
+
+}
+
+.checkout-summary-total{
+
+    border-bottom:none;
+
+    margin-top:10px;
+
+    padding-top:16px;
+
+    border-top:2px solid var(--border);
+
+    font-size:18px;
+
+    color:var(--text-primary);
+
+}
+
+.checkout-empty{
+
+    color:var(--text-secondary);
+
+    padding:10px 0;
+
+}
+
+@media (max-width:900px){
+
+    .checkout-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .checkout-summary{
+
+        position:static;
+
+    }
+
+}
