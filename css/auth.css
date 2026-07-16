@@ -210,7 +210,7 @@
     height:16px;
     accent-color:var(--primary);
     cursor:pointer;
-}
+} 
 
 .forgot{
     font-size:14px;
@@ -221,7 +221,7 @@
 .forgot:hover{
     text-decoration:underline;
 }
-
+ 
 .login-btn{
     width:100%;
     height:56px;

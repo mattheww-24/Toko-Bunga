@@ -22,6 +22,7 @@ function renderCart() {
         return;
 
     }
+    
 
     if (cartSummary) cartSummary.style.display = "";
     if (cartEmpty) cartEmpty.style.display = "none";

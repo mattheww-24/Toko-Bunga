@@ -9,6 +9,7 @@ function validateEmail(email) {
 
 }
 
+
 if (loginForm) {
 
     const email = document.querySelector("#email");

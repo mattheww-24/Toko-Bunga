@@ -25,3 +25,4 @@ logoutBtn.addEventListener("click", () => {
     }, 1200);
 
 });
+
